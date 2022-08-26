@@ -9,46 +9,82 @@
   <link rel="stylesheet" href="main.css" />
   <h1>Fill the following form :</h1>
   <body>
-    <h3>Full name</h3>
     <form action="">
-      <label for="fname">First name:</label>
-      <input
-        style="margin-right: 3rem"
-        type="text"
-        name="fname"
-        id=""
-        class="two-lines"
-      />
-      <label for="lname">Last name:</label>
-      <input type="text" name="lname" id="" class="two-lines" />
-    </form>
-    <h3>Address</h3>
-    <label for="adress">Street Adress:</label>
-    <input type="text" name="adress" id="" class="one-line" />
+      <h3>Full name</h3>
+      <form action="">
+        <label for="fname">First name:</label>
+        <input
+          style="margin-right: 3rem"
+          type="text"
+          name="fname"
+          id=""
+          class="two-lines"
+          maxlength="20"
+        />
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          name="lname"
+          id=""
+          maxlength="20"
+          class="two-lines"
+        />
+      </form>
+      <h3>Address</h3>
+      <label for="adress">Street Adress:</label>
+      <input type="text" name="adress" id="" class="one-line" />
 
-    <form action="">
-      <label for="city">City: </label>
-      <input
-        type="text"
-        name="city"
-        style="margin-right: 6rem"
-        id=""
-        class="two-lines"
-      />
-      <label for="state">State:</label>
-      <input type="text" name="state" id="" class="two-lines" />
+      <form action="">
+        <label for="city">City: </label>
+        <input
+          type="text"
+          name="city"
+          style="margin-right: 6rem"
+          id=""
+          maxlength="20"
+          class="two-lines"
+        />
+        <label for="state">State:</label>
+        <input type="text" name="state" maxlength="3" id="" class="two-lines" />
+      </form>
+      <br />
+      <br />
+      <label for="zip">Postal / Zip Code</label>
+      <input type="number" maxlength="4" name="zip" id="" />
+      <h3>Enter your email</h3>
+      <input type="email" name="" id="" placeholder="something@gmail.com" />
+      <h3>Your age</h3>
+      <label for="age">Choose your age (between 18 and 30)</label>
+      <input type="range" name="age" id="" min="18" max="30" />
+      <h3>Phone number</h3>
+      <label for="phone">Enter your phone number</label>
+      <input type="tel" name="phone" id="" placeholder="+99890 999 99 99" />
+      <h3>Password</h3>
+      <label for="password">Write your password</label>
+      <input type="password" />
+      <h3>Choose your favorite web language</h3>
+      <form action="">
+        <input type="radio" name="C" id="" />
+        <label for="C">C</label>
+        <input type="radio" name="Python" id="" />
+        <label for="Python">Python</label>
+        <input type="radio" name="golang" id="" />
+        <label for="golang">Golang</label>
+      </form>
+      <h3>Your gender</h3>
+      <label for="Male">Male</label>
+      <input type="checkbox" name="Male" id="" />
+      <br />
+      <label for="Female">Female</label>
+      <input type="checkbox" name="Female" id="" />
+      <h3>Date of birth</h3>
+      <label for="birthday">Enter your birthday</label>
+      <input type="date" />
+      <h3>Upload your proof of study</h3>
+      <label for="pdf">PDF file</label>
+      <input type="file" name="pdf" />
+      <br />
+      <input type="submit" name="" id="" value="Submit" class="submit" />
     </form>
-    <br />
-    <br />
-    <label for="zip">Postal / Zip Code</label>
-    <input type="number" maxlength="6" name="zip" id="" />
-    <h3>Enter your email</h3>
-    <input type="email" name="" id="" placeholder="something@gmail.com" />
-    <h3>Your age</h3>
-    <label for="age">Choose your age (between 18 and 30)</label>
-    <input type="range" name="age" id="" min="18" max="30" />
-    <h3>Phone number</h3>
-    <label for="phone">Enter your phone number</label>
-    <input type="tel" name="phone" id="" placeholder="+99890 999 99 99" />
   </body>
 </html>
